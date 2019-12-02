@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Задание №1.  С помощью цикла while вывести все простые числа в промежутке от 0 до 100
+function simpleNumber (num) {
+if( num < 2 ) return false;
+let count = 2;
+while(count < num) {
+    if(num % count === 0) {
+    return false;
+    }
+    count++;
+}
+return true;
+}
+
+function getSimple(max) {
+let i = 0;
+let list = [];
+
+while (i < max) {
+    if(simpleNumber(i)) list.push(i);
+    i++;
+}
+console.log(list);
+}
+
+getSimple(10)
+
+/Задание №2. Нарисовать пирамиду с помощью console.log, как показано на рисунке, только у вашей пирамиды должно быть 20 рядов, а не 5:
+x
+xx
+xxx
+xxxx
+xxxxx */
+// var count = "";
+// for(var i = 1; i < 20; i++) {
+//   count= count + "#";
+//   console.log(count)
+
+
+
+
+</script>
+</body>
+</html>

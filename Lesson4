@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    
+    function createObject(num) {
+        num = +prompt("Введите число от 0 до 999");
+        let sap = {
+            "units": num,
+            "profs": num,
+            "hundrds": num
+        }
+        sap["hundrds"] = num % 10 * 100;
+        sap["profs"] = num % 100 % 10 * 10;
+        sap["units"] = num % 10;
+        console.log (sap);
+}
+createObject ()
+
+
+</script>
+</body>
+</html>
